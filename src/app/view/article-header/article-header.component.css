@@ -1,0 +1,16 @@
+
+.Article-Header-Container {
+    background-color: #BBBBBB;
+    width: 60vw;
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.Article-Header-Title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #FF0000;
+}

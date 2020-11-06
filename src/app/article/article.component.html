@@ -1,0 +1,19 @@
+<div class="min-heigth-site">
+
+
+    <div *ngIf="isValid">
+        <p>TIPO: {{ parmType }}  TEMA: {{ parmTheme }}  ARTIGO: {{ parmArticle }}</p>
+        <p>-----------------------------------------------------</p>
+        <P>ARTIGO {{ parmArticle }}</P>
+        <p>Tipo.....: {{ type.title }}</p>
+        <p>Tema.....: {{ theme.title }}</p>
+        <p>Titulo...: {{ article.title }}</p>
+        <p>Descrição: {{ article.description }}</p>
+        <p>Data.....: {{ article.date }}</p>
+        <p>É novo...: {{ article.isNew }}</p>
+    </div>
+    <div *ngIf="!isValid">
+        <app-page-not-found></app-page-not-found>
+    </div>
+</div>
+

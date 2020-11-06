@@ -1,0 +1,15 @@
+
+.Themes-Container {
+    margin: 12px;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.Theme-Type {
+    margin-bottom: 12px;
+    font-size: 18px;
+    font-weight: bold;
+}

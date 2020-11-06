@@ -1,0 +1,26 @@
+<div class="min-heigth-site">
+
+    <div class="Articles-Buttons-Header">
+        <app-button-type parmType="{{parmType}}"></app-button-type>
+    
+        <app-button-theme 
+            parmType="{{parmType}}"
+            parmTheme="{{theme.name}}" 
+            parmQuantityArticles="0">
+        </app-button-theme>
+    
+    </div>
+    
+    <div class="Articles-Buttons">
+        <div *ngFor="let article of articles">
+            <app-article-header 
+                parmType="{{parmType}}"
+                parmTheme="{{parmTheme}}"
+                parmId="{{article.id}}"
+            >
+            </app-article-header>
+        </div>
+    </div>
+
+</div>
+

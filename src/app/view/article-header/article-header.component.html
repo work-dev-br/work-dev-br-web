@@ -1,0 +1,10 @@
+<div>
+    <a [routerLink]="['/article', parmType, parmTheme, parmId ]">
+        <div class="Article-Header-Container">
+            <div>{{ type.title }} {{ theme.title }}</div>
+            <div class="Article-Header-Title">{{ article.title }}</div>
+            <div>{{ article.date }}</div>
+            <div>{{ article.description }}</div>
+        </div>
+    </a>
+</div>

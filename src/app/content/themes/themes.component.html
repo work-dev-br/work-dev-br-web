@@ -1,0 +1,10 @@
+<div class="Themes-Container">
+    <div class="Theme-Type">{{ type.title }}</div>
+    <div *ngFor="let theme of themes">
+        <app-button-theme 
+            parmType="{{parmType}}"
+            parmTheme="{{theme.name}}" 
+            parmQuantityArticles="{{theme.quantityArticles}}">
+        </app-button-theme>
+    </div>
+</div>
