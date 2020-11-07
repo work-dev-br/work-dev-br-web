@@ -1,0 +1,14 @@
+<div class="Theme-Folder-Container">
+
+    <a [routerLink]="['/articles', parmType, parmTheme]">
+        <mat-card class="Card-Container"
+        mat-raised-button matBadge="{{this.parmQuantityArticles}}" [matBadgeHidden]="hiddenBadge" 
+        >
+            <mat-card-header>
+                <div mat-card-avatar class="Icon-Angular-128"></div>
+                <mat-card-title>{{ theme.title }}</mat-card-title>
+            </mat-card-header>
+        </mat-card>
+    </a>
+
+</div>

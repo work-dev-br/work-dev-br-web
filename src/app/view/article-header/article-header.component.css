@@ -1,16 +1,41 @@
 
 .Article-Header-Container {
-    background-color: #BBBBBB;
-    width: 60vw;
-    margin-bottom: 16px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    margin-bottom: 26px;
 }
 
-.Article-Header-Title {
-    font-size: 16px;
-    font-weight: bold;
-    color: #FF0000;
+.Card-Container {
+    min-width: 60vw;
+}
+  
+
+
+
+
+
+
+
+
+
+.Article-Container {
+    background-color: #FFFFFF;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    width: 100%;
+    min-height: 50px;
+    border:#ededed;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+.Article-Header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Article-Content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
 }

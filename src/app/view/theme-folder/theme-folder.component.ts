@@ -5,26 +5,24 @@ import { Theme } from '../../models/theme.model'
 import { ThemeService } from '../../services/theme.service'
 
 @Component({
-    selector: 'app-button-theme',
-    templateUrl: './button-theme.component.html',
-    styleUrls: ['./button-theme.component.css'],
+    selector: 'app-theme-folder',
+    templateUrl: './theme-folder.component.html',
+    styleUrls: ['./theme-folder.component.css'],
     providers: [ 
         ThemeService, 
-    ]        
+    ]          
 })
-export class ButtonThemeComponent implements OnInit {
+export class ThemeFolderComponent implements OnInit {
     public theme: Theme
-
-
-    /* ################# acertar ###############*/
-    public parmType: string = "tools"
-
+    public hiddenBadge: boolean = false
 
     constructor(
-        private themeService: ThemeService,         
+        private themeService: ThemeService,           
     ) { }
 
+    @Input() parmType: string
     @Input() parmTheme: string 
+    @Input() parmQuantityArticles: string
 
     ngOnInit(): void {
     }

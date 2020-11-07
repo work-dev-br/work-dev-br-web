@@ -1,5 +1,13 @@
 <div class="Button-Theme-Container">
-    <button [routerLink]="['/articles', parmType, parmTheme]">
-        {{ theme.title }} {{ parmQuantityArticles }}
-    </button>
+
+    <a mat-stroked-button class="Button-Box" [routerLink]="['/articles', parmType, parmTheme]">
+        <mat-icon>home</mat-icon>
+        <span class="Button-Title">{{ theme.title }}</span>
+    </a>
+
 </div>
+
+<!-- 
+    <a mat-stroked-button class="Button-Box" [routerLink]="['/articles', parmType, parmTheme]">
+
+-->

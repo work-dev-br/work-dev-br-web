@@ -6,6 +6,10 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatDividerModule } from '@angular/material/divider'
+import { MatButtonModule }  from '@angular/material/button'
+import { MatIconModule } from '@angular/material/icon'
+import { MatCardModule } from '@angular/material/card'
+import { MatBadgeModule } from '@angular/material/badge'
 
 /*-- APP Components --*/
 import { PageComponent } from './page/page.component';
@@ -21,6 +25,7 @@ import { PageNotFoundComponent } from './view/page-not-found/page-not-found.comp
 import { ButtonTypeComponent } from './view/button-type/button-type.component';
 import { ButtonThemeComponent } from './view/button-theme/button-theme.component';
 import { ArticleHeaderComponent } from './view/article-header/article-header.component';
+import { ThemeFolderComponent } from './view/theme-folder/theme-folder.component';
 
 @NgModule({
     declarations: [
@@ -37,13 +42,18 @@ import { ArticleHeaderComponent } from './view/article-header/article-header.com
         PageNotFoundComponent,
         ButtonTypeComponent,
         ButtonThemeComponent,
-        ArticleHeaderComponent
+        ArticleHeaderComponent,
+        ThemeFolderComponent
     ],
     imports: [
         BrowserModule,
         AppRoutingModule,
         BrowserAnimationsModule,
-        MatDividerModule
+        MatDividerModule,
+        MatButtonModule,
+        MatIconModule,
+        MatCardModule,
+        MatBadgeModule
     ],
     providers: [],
     bootstrap: [AppComponent]

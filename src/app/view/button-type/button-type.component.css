@@ -1,4 +1,14 @@
 
-.Button-Theme-Container {
+.Button-Type-Container {
     margin: 6px;
+}
+
+.Button-Box {
+    background-color: steelblue;
+    color: white;
+}
+
+.Button-Title {
+    padding-left: 10px;
+    font-size: 16px;
 }

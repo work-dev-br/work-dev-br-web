@@ -1,5 +1,9 @@
 <div class="min-heigth-site">
 
+    <div class="Articles-Buttons-Header">
+        <app-button-type parmType="{{parmType}}"></app-button-type>
+        <app-button-theme parmTheme="{{theme.name}}"></app-button-theme> 
+    </div>
 
     <div *ngIf="isValid">
         <p>TIPO: {{ parmType }}  TEMA: {{ parmTheme }}  ARTIGO: {{ parmArticle }}</p>
