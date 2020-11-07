@@ -9,14 +9,14 @@ export class TypeService {
     private types: Type[] = []
 
     constructor() { 
-        this.addType("tools", "Ferramentas")
-        this.addType("tips", "Dicas")
-        this.addType("projects", "Projetos")
-        this.addType("varieties", "Variedades")
+        this.addType("tools", "Ferramentas", "plumbing")
+        this.addType("tips", "Dicas", "online_prediction")
+        this.addType("projects", "Projetos", "phone_android")
+        this.addType("varieties", "Variedades", "language")
     }
 
-    private addType(name: string, title: string): void {
-        this.types.push({ name, title })
+    private addType(name: string, title: string, icon: string): void {
+        this.types.push({ name, title, icon })
     }
 
     public getTypes(): Type[] {

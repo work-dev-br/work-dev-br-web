@@ -2,7 +2,7 @@
 <div class="Button-Type-Container">
 
     <a mat-stroked-button class="Button-Box" [routerLink]="['/themes', type.name]">
-        <mat-icon>home</mat-icon>
+        <mat-icon>{{ type.icon }}</mat-icon>
         <span class="Button-Title">{{ type.title }}</span>
     </a>
 

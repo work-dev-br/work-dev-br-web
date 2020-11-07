@@ -1,15 +1,21 @@
 <div class="Header-Container">
-    <div class="Header-Title">work.dev.br</div>
-    <div class="spacer"></div>
+    <div class="Header-Title">{{title}}</div>
     <div class="Header-Right">
         <div class="Header-Icon">
-            <a [routerLink]="['/home']">Home</a>
+            <a [routerLink]="['/home']">
+                <mat-icon class="Icon-Style">menu_outline</mat-icon>
+            </a>
         </div>
         <div class="Header-Icon">
-            <a [routerLink]="['/contact']">Contato</a>
+            <a [routerLink]="['/contact']">
+                <mat-icon class="Icon-Style">mail_outline</mat-icon>
+            </a>
         </div>
         <div class="Header-Icon">
-            <a [routerLink]="['/about']">Sobre</a>
+            <a [routerLink]="['/about']">
+                <mat-icon class="Icon-Style">info_outline</mat-icon>
+            </a>
         </div>
     </div>
 </div>
+
