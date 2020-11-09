@@ -9,16 +9,16 @@ import { ThemeService } from '../../services/theme.service'
 import { ArticleService } from '../../services/article.service'
 
 @Component({
-    selector: 'app-article-header',
-    templateUrl: './article-header.component.html',
-    styleUrls: ['./article-header.component.css'],
+    selector: 'app-article-folder',
+    templateUrl: './article-folder.component.html',
+    styleUrls: ['./article-folder.component.css'],
     providers: [ 
         TypeService, 
         ThemeService, 
         ArticleService 
     ]
 })
-export class ArticleHeaderComponent implements OnInit {
+export class ArticleFolderComponent implements OnInit {
     public id: number
     public type: Type
     public theme: Theme
@@ -42,7 +42,6 @@ export class ArticleHeaderComponent implements OnInit {
         this.type = this.typeService.getType(this.parmType)
         this.theme = this.themeService.getTheme(this.parmTheme)
         this.article = this.articleService.getArticle(this.parmType, this.parmTheme, this.id)
-        console.log("article.isNew: " + this.article.isNew)
     }
 
 }

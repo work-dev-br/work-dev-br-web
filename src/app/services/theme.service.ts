@@ -14,17 +14,17 @@ export class ThemeService {
 
     constructor( private articleService: ArticleService ) { 
         /*-- Carrega os Temas ==*/
-        this.addTheme("angular", "Angular")
-        this.addTheme("javascript", "Javascript")
-        this.addTheme("nodejs", "Node JS")
-        this.addTheme("css", "CSS")
-        this.addTheme("internet", "Internet")
+        this.addTheme("angular", "Angular", 0, "angular-128")
+        this.addTheme("javascript", "Javascript", 0, "javascript-128")
+        this.addTheme("nodejs", "Node JS", 0, "angular-128")
+        this.addTheme("css", "CSS", 0, "angular-128")
+        this.addTheme("internet", "Internet", 0, "angular-128")
         /*-- Carrega todos os Artigos --*/
         this.articles = this.articleService.getArticles()
     }
     
-    private addTheme(name: string, title: string, quantityArticles: number = 0): void {
-        this.themes.push({ name, title, quantityArticles })
+    private addTheme(name: string, title: string, quantityArticles: number = 0, icon: string): void {
+        this.themes.push({ name, title, quantityArticles, icon })
     }
     
     public getThemes(): Theme[] {
@@ -50,20 +50,20 @@ export class ThemeService {
             this.themes.forEach((t, i) => {
                 if (a.type == type && a.theme == t.name) { 
                     this.themes[i].quantityArticles++ 
-                    console.log("Igual: " + a.type + " = " + type + " e " + a.theme + " = " + t.name )
+                   // console.log("Igual: " + a.type + " = " + type + " e " + a.theme + " = " + t.name )
                 }
             })
         })
         /*-- Filtra os Temas com quantidade --*/
-        this.themes.forEach((t) => {
-            console.log("this.themes: " + t.name + ", " + t.title + ", " + t.quantityArticles)
-        })
+        //this.themes.forEach((t) => {
+        //    console.log("this.themes: " + t.name + ", " + t.title + ", " + t.quantityArticles)
+       // })
 
         t = this.themes.filter((t) => { return t.quantityArticles > 0 ? true : false })        
         
         
-        console.log("t.length: " + t.length)
-        t.forEach((t) => { console.log("Tema: " + t.name + ", " + t.title + ", " + t.quantityArticles) })
+        //console.log("t.length: " + t.length)
+        //t.forEach((t) => { console.log("Tema: " + t.name + ", " + t.title + ", " + t.quantityArticles) })
         
         
         return t

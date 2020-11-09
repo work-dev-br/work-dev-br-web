@@ -1,22 +1,19 @@
-<div class="min-heigth-site">
+<div>
 
     <div class="Home-Buttons">
         <div *ngFor="let type of types">
             <app-button-type parmType="{{type.name}}"></app-button-type>
         </div>
     </div>
-    <mat-divider></mat-divider>
 
-    <div class="Articles-Box">
-        <div class="Articles-Buttons">
-            <div *ngFor="let article of articles">
-                <app-article-header 
-                    parmType="{{article.type}}"
-                    parmTheme="{{article.theme}}"
-                    parmId="{{article.id}}"
-                >
-                </app-article-header>
-            </div>
+    <div class="Articles-Box Style-Margin">
+        <div *ngFor="let article of articles">
+            <app-article-folder 
+                parmType="{{article.type}}"
+                parmTheme="{{article.theme}}"
+                parmId="{{article.id}}"
+            >
+            </app-article-folder>
         </div>
     </div>
 

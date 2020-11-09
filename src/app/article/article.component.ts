@@ -29,6 +29,8 @@ export class ArticleComponent implements OnInit {
     public article: Article
     public isValid: boolean  
 
+    public articles001: boolean = false
+
     constructor( 
         private route: ActivatedRoute,
         private typeService: TypeService, 
@@ -51,6 +53,11 @@ export class ArticleComponent implements OnInit {
             this.isValid = false
         } else {
             this.isValid = true
+        }
+        if ( this.id > 0 && this.id <= 10 ) {
+            this.articles001 = true
+        } else {
+            this.isValid = false
         }
     }
 

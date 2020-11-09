@@ -1,4 +1,4 @@
-<div class="min-heigth-site">
+<div>
 
     <div class="Articles-Buttons-Header">
         <app-button-type parmType="{{parmType}}"></app-button-type>
@@ -6,15 +6,18 @@
     </div>
 
     <div *ngIf="isValid">
-        <p>TIPO: {{ parmType }}  TEMA: {{ parmTheme }}  ARTIGO: {{ parmArticle }}</p>
-        <p>-----------------------------------------------------</p>
-        <P>ARTIGO {{ parmArticle }}</P>
-        <p>Tipo.....: {{ type.title }}</p>
-        <p>Tema.....: {{ theme.title }}</p>
-        <p>Titulo...: {{ article.title }}</p>
-        <p>Descrição: {{ article.description }}</p>
-        <p>Data.....: {{ article.date }}</p>
-        <p>É novo...: {{ article.isNew }}</p>
+        <div class="Articles-Box Style-Margin">
+            <app-article-header
+                parmType="{{article.type}}"
+                parmTheme="{{article.theme}}"
+                parmId="{{article.id}}"
+            >
+            </app-article-header>
+
+            <!-- Component: articles001 - Artigos de 1 a 10 -->
+            <app-articles001 parmId="{{article.id}}" *ngIf="articles001"></app-articles001>         
+
+        </div>
     </div>
     <div *ngIf="!isValid">
         <app-page-not-found></app-page-not-found>

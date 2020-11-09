@@ -10,15 +10,9 @@
 }
 
 .Articles-Box {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 14px;
+    margin-bottom: 10px;
     display: flex;
     flex-direction: column;
 }
 
-.Articles-Buttons {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}

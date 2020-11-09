@@ -1,41 +1,67 @@
-
-.Article-Header-Container {
-    margin-bottom: 26px;
+.Article-Header-Container {      /* ok */
+    margin-bottom: 14px;
 }
 
-.Card-Container {
-    min-width: 60vw;
+.Article-Header-Link {           /* ok */
+    text-decoration: none;
+    color: #333333;
 }
-  
 
-
-
-
-
-
-
-
-
-.Article-Container {
-    background-color: #FFFFFF;
-    margin-top: 12px;
-    margin-bottom: 12px;
+.Article-Header-Box {             /* ok */
+    margin-bottom: 25px;
     width: 100%;
-    min-height: 50px;
-    border:#ededed;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 5px;
 }
 
-.Article-Header {
+.Article-Header-Data {             /* ok */
+    display: flex;
+    flex-direction: row;
+}
+
+.Article-Header-Icon {             /* ok */
+    margin-top: 6px;
+    margin-bottom: 6px;
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.Article-Header-Top {           /* ok */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}    
+
+.Article-Header-Top-Left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.Article-Header-Top-Right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.Article-Title {
+    margin-top: 4px;
+    font-size: 20px;
+    color: firebrick;
+    line-height: 1.2;
+    padding-bottom: 3px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.Article-Content {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+.Article-Date {
+    font-size: 12px;
+}
+
+.Article-Header-Description {           /* ok */
+    margin-top: 3px;
+    font-style: italic;
 }

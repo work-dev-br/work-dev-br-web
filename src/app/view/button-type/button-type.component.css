@@ -4,11 +4,15 @@
 }
 
 .Button-Box {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     color: #118ab2;
 }
 
 .Button-Title {
     padding-left: 10px;
     font-size: 16px;
+}
+
+.Button-Icon {
+    color: #233d4d;
 }

@@ -13,9 +13,9 @@ export class ArticleService {
     }
 
     private setArticle( id: number, type: string, theme: string, title: string,
-        description: string, date: Date, isNew: boolean,
+        description: string, date: Date, isNew: boolean, level: number
     ): void {
-        this.articles.push({ id, type, theme, title, description, date, isNew, })
+        this.articles.push({ id, type, theme, title, description, date, isNew, level})
     }
 
     public getArticles(): Article[] {
@@ -56,29 +56,31 @@ export class ArticleService {
     }
 
     private addArticles(): void {
-        this.setArticle( 1, "tools", "angular", 
-            "Artigo 1 da Ferramenta Angular", 
-            "Descrição 1", 
-            new Date(2020, 11, 1), true, )
+        this.setArticle( 1, "tips", "angular", 
+            "Como exibir uma data no formato dd/mm/aaaa em Angular.", 
+            "Este artigo mostra como exibir uma data no formato dd/mm/aaaa com interpolation e pipe no Angular.", 
+            new Date(2020, 11, 8), true, 1)
         this.setArticle( 2, "tools", "angular", 
-            "Artigo 2 da Ferramenta Angular", 
-            "Descrição 2", 
-            new Date(2020, 11, 1), false, )
-        this.setArticle( 1, "tools", "javascript", 
-            "Artigo 1 da Ferramenta Javascript", 
+            "O que é o framework Angular e para que serve.", 
+            "Breve introdução ao este framework que conquistou muitos desenvolvedores e esta sendo utilizado em larga escala mundo afora.", 
+            new Date(2020, 11, 8), true, 1)
+
+
+        this.setArticle( 3, "tools", "javascript", 
+            "Artigo 1 da Ferramenta Javascript testando a quebra de linha do titulo que vai quebrar para a teerceira linha", 
             "Descrição 1", 
-            new Date(2020, 11, 1), true, )
-        this.setArticle( 1, "tools", "css", 
+            new Date(2020, 11, 1), true, 3)
+        this.setArticle( 4, "tools", "css", 
             "Artigo 1 da Ferramenta CSS", 
             "Descrição 1", 
-            new Date(2020, 11, 1), false, )
-        this.setArticle( 1, "tips", "javascript", 
+            new Date(2020, 11, 1), false, 3)
+        this.setArticle( 5, "tips", "javascript", 
             "Artigo 1 de Dicas Javascript", 
             "Descrição 1", 
-            new Date(2020, 11, 1), true, )
-        this.setArticle( 1, "projects", "angular", 
+            new Date(2020, 11, 1), true, 2)
+        this.setArticle( 6, "projects", "angular", 
             "Artigo 1 de Projeto Angular", 
             "Descrição 1", 
-            new Date(2020, 11, 1), false, )
+            new Date(2020, 11, 1), false, 1)
     }
 }

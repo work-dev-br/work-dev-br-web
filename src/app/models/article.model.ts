@@ -6,5 +6,6 @@ export class Article {
     title: string
     description: string
     date: Date
-    isNew: boolean
+    isNew: boolean             // Artigo novo: aparece na home page
+    level: number              // level: 1=Basico  2=Intermediario  3=Avancado
 }

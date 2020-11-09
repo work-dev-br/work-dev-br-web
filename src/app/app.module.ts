@@ -26,6 +26,9 @@ import { ButtonTypeComponent } from './view/button-type/button-type.component';
 import { ButtonThemeComponent } from './view/button-theme/button-theme.component';
 import { ArticleHeaderComponent } from './view/article-header/article-header.component';
 import { ThemeFolderComponent } from './view/theme-folder/theme-folder.component';
+import { ArticleFolderComponent } from './view/article-folder/article-folder.component';
+import { ArticleLevelComponent } from './view/article-level/article-level.component';
+import { Articles001Component } from './article/articles001/articles001.component';
 
 @NgModule({
     declarations: [
@@ -43,7 +46,10 @@ import { ThemeFolderComponent } from './view/theme-folder/theme-folder.component
         ButtonTypeComponent,
         ButtonThemeComponent,
         ArticleHeaderComponent,
-        ThemeFolderComponent
+        ThemeFolderComponent,
+        ArticleFolderComponent,
+        ArticleLevelComponent,
+        Articles001Component
     ],
     imports: [
         BrowserModule,

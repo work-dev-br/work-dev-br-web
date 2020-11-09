@@ -1,0 +1,64 @@
+
+.Article-Folder-Container {
+    margin-bottom: 14px;
+}
+
+.Article-Link {
+    text-decoration: none;
+    color: #333333;
+}
+
+.Article-Container {
+    background-color: #FFFFFF;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding: 10px;
+    width: 100%;
+    border:#ededed;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+}
+
+.Article-Header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Article-Content {
+    display: flex;
+    flex-direction: row;
+}
+
+.Article-Title-Box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.Article-Icon {
+    margin-top: 6px;
+    margin-bottom: 6px;
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.Article-Title {
+    margin-top: 4px;
+    font-size: 20px;
+    color: firebrick;
+    padding-bottom: 3px;
+}
+
+.Article-Date {
+    font-size: 12px;
+}
+
+.Article-Description {
+    margin-top: 3px;
+    font-style: italic;
+}

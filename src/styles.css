@@ -5,7 +5,38 @@ body {
     background-color: #fafafa;
 }
 
+.Style-Margin {
+    margin-left: 26vw;
+    margin-right: 26vw;
+}
+
+@media screen and (max-width: 1200px) {
+    .Style-Margin {
+        margin-left: 18vw;
+        margin-right: 18vw;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .Style-Margin {
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .Style-Margin {
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+}
+
 /*
+body {
+    margin: 0;
+    background-color: #fafafa;
+}
+
 :host {
     font-family: Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 14px;
@@ -36,13 +67,6 @@ a:hover {
     min-height: 60vh;
 }
 
-@media screen and (max-width: 767px) {
-
-}
-
-@media screen and (max-width: 320px) {
-
-}
 */
 
 /*--   DECLARAÇÃO DOS ICONES FERRAMENTAS  --*/

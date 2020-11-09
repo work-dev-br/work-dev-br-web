@@ -1,0 +1,25 @@
+<div class="Article-Folder-Container">
+
+    <a class="Article-Link" [routerLink]="['/article', parmType, parmTheme, parmId ]">
+        <div class="Article-Container">
+            <div class="Article-Header">
+                <div>{{ type.title }} {{ theme.title }}</div>
+                <div>
+                    <app-article-level level="{{article.level}}"></app-article-level>
+                </div>
+            </div>
+            <div class="Article-Content">
+                <div>
+                    <img  class="Article-Icon" src="../assets/{{theme.icon}}.png" width="128" height="128" />
+                </div>
+                <div class="Article-Title-Box">
+                    <div class="Article-Title">{{ article.title }}</div>
+                    <div class="Article-Date">{{ article.date  | date: 'dd/MM/yyyy' }}</div>
+                </div>
+            </div>
+            <mat-divider></mat-divider>
+            <div class="Article-Description">{{ article.description }}</div>
+        </div>
+    </a>
+
+</div>
