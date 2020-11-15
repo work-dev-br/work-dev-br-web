@@ -3,7 +3,7 @@ import { Component, OnInit, Input } from '@angular/core';
 @Component({
     selector: 'app-articles001',
     templateUrl: './articles001.component.html',
-    styleUrls: ['../articles000.component.css']
+    styleUrls: ['../articlesAll.component.css']
 })
 export class Articles001Component implements OnInit {
     public id: number
@@ -16,7 +16,7 @@ export class Articles001Component implements OnInit {
         </h1>
         <p>This template definition spans multiple lines.</p>
         `
-
+        
 
     constructor() { }
 
@@ -40,4 +40,5 @@ export class Articles001Component implements OnInit {
             return false
         }
     }
+
 }

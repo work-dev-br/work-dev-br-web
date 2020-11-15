@@ -6,28 +6,42 @@ body {
 }
 
 .Style-Margin {
-    margin-left: 26vw;
-    margin-right: 26vw;
+    margin-left: 28vw;
+    margin-right: 28vw;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1600px) {
+    .Style-Margin {
+        margin-left: 23vw;
+        margin-right: 23vw;
+    }
+}
+
+@media screen and (max-width: 1350px) {
     .Style-Margin {
         margin-left: 18vw;
         margin-right: 18vw;
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1100px) {
     .Style-Margin {
-        margin-left: 10vw;
-        margin-right: 10vw;
+        margin-left: 13vw;
+        margin-right: 13vw;
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 850px) {
     .Style-Margin {
-        margin-left: 2vw;
-        margin-right: 2vw;
+        margin-left: 8vw;
+        margin-right: 8vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .Style-Margin {
+        margin-left: 3vw;
+        margin-right: 3vw;
     }
 }
 

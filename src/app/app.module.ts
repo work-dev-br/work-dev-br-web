@@ -29,6 +29,7 @@ import { ThemeFolderComponent } from './view/theme-folder/theme-folder.component
 import { ArticleFolderComponent } from './view/article-folder/article-folder.component';
 import { ArticleLevelComponent } from './view/article-level/article-level.component';
 import { Articles001Component } from './article/articles001/articles001.component';
+import { CopyCodeComponent } from './article/copy-code/copy-code.component';
 
 @NgModule({
     declarations: [
@@ -49,7 +50,8 @@ import { Articles001Component } from './article/articles001/articles001.componen
         ThemeFolderComponent,
         ArticleFolderComponent,
         ArticleLevelComponent,
-        Articles001Component
+        Articles001Component,
+        CopyCodeComponent
     ],
     imports: [
         BrowserModule,

@@ -1,0 +1,25 @@
+
+.Box-Code {
+    background-color: #424242;
+    margin-bottom: 30px;
+    color: #67cdfe;
+    border-radius: 8px;
+    box-shadow: 2px 2px 6px 1px rgba(0,0,0,0.75); 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Box-Text {
+    padding: 16px;
+    font-family: monospace, 'Courier New', Courier;
+    font-size: 18px;
+    line-height: 1.5;
+
+}
+
+.Box-Icon {
+    color: white;
+    padding: 6px;
+}
+
